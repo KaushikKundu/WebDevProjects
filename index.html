@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attorney | File Case</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="header">
+      <h1>Judgement E-Portal</h1>
+    </section>
+    <section class="generalfillup">
+      <form method="POST" class="submit-info" id="submit-info">
+        <div class="subSection">
+          <h1 class="subHeading">Case Heading</h1>
+          <p>
+            Case type that best fits: <br />
+            <select name="" id="casetype">
+              <option>--- choose ---</option>
+              <option>Business Case</option>
+              <option>Civil Case</option>
+              <option>Criminal Case</option>
+            </select>
+          </p>
+          <p>
+            Case to be heard at: <br />
+            <select name="" id="courttype">
+              <option>--- choose ---</option>
+              <option>District Court</option>
+              <option>High Court</option>
+              <option>Supreme Court</option>
+            </select>
+          </p>
+          <p>
+            Case being carried on from: <br />
+            <select name="" id="carryon">
+              <option>--- choose ---</option>
+              <option>None</option>
+              <option>District Court</option>
+              <option>High Court</option>
+            </select>
+          </p>
+        </div>
+        <hr />
+        <div class="subSection">
+          <h1 class="subHeading">Attorney information</h1>
+          <p>
+            Attorney Name: <br />
+            <input type="text" placeholder="Full Name" id="attorney-name" />
+          </p>
+          <p>
+            Attorney ID for the respective person: <br />
+            <input
+              type="email"
+              placeholder="attorney@judement.com"
+              id="attorney-emailinfo"
+            />
+          </p>
+        </div>
+        <hr />
+        <div class="subSection">
+          <h1 class="subHeading">Client information</h1>
+          <p>
+            Name of the person filing case : <br />
+            <input type="text" placeholder="Full Name" id="name" />
+          </p>
+          <p>
+            E-Mail : <br />
+            <input type="email" placeholder="email@inlook.com" id="emailinfo" />
+          </p>
+          <p>
+            Phone Number : <br />
+            <input type="number" placeholder="00000 00000" id="phone" />
+          </p>
+          
+          
+          <p>
+            Address : <br />
+            <input type="text" placeholder="Address" id="address" />
+          </p>
+          
+          <p>
+            City Name: <br />
+            <input type="text" placeholder="eg: Kolkata" id="city" />
+          </p>
+          <p>
+            Area Pin Code: <br />
+            <input type="number" placeholder="000 000" id="pincode" />
+          </p>
+        </div>    
+        <hr />
+    <div class="subSection" id="issueReport">
+        <h1 class="subHeading">Issue Report</h1>
+        <p>
+            Please give a brief description of the issue: <br />
+            <textarea name="" id="" cols="" rows="6"></textarea>
+        </p>
+        <button class="btn" id="submit" type="submit">Complete Form</button>
+        <button class="btn" type="reset">Clear Form</button>
+    </div>
+    </form>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+    <script src="js/postcaseinfo.js"></script>
+  </body>
+</html>
